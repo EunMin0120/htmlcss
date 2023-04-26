@@ -1,0 +1,54 @@
+ul{ height: 40px; text-shadow: 2px 2px 5px #505050;}
+ul>li{ color: white;
+    float: left;
+    text-align: center;
+    background-color: rgb(89, 180, 205);
+}
+ul a{ display: block; padding: 10px; color: white;}
+ul>li>ol>li:hover>ol{
+    visibility: visible;
+    transition: 0.3s;}
+ul>li>ol>li>ol{
+    position: absolute;
+    width: 100%;
+    visibility: hidden;
+    
+    margin-left: 150px;
+    margin-top: -40px;
+}
+ol>li{ width: 100%; border-radius: 50%; font-size: 15px;}
+ol{ background-color: rgb(70, 70, 70);
+    padding: 0px; border-radius: 10%; 
+}
+ul>li>ol{
+    position: absolute;
+    width: 100%;
+    visibility: hidden;
+    
+    margin: -2px;
+    border-radius: 20%;
+}
+ul>li:hover>ol{
+    visibility: visible;
+    opacity: 0.9;
+    transition: 0.3s;
+}
+/* 큰메뉴 보이기 */
+ul>li:hover>ul>li>ol{
+    visibility: visible;
+}
+/* 세부메뉴 보이기 */
+ul>li:hover>ol>li{height: 40px; transition: 0.5s;}
+ul>li{ position: relative; width: 150px; height: 100%; margin: auto;}
+ol>li:hover{ background-color: rgb(70, 70, 70); opacity: 0.9;}
+ol>li>a{ position: relative; color: rgb(184, 177, 155);}
+li:hover>a{
+    opacity: 0.7;
+}
+/* ul>li:nth-of-type(1){border-radius: 30% 0 0 10%;}
+ul>li:nth-last-of-type(1){border-radius: 0 30% 10% 0;;} */
+/* ul>li{box-shadow: 5px 5px 5px rgb(89, 180, 205);} */
+ul>li::after{
+    content: ''; background-color: 1px solid black;
+    height: 100%;
+}
