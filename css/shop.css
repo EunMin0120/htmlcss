@@ -1,0 +1,66 @@
+.top{
+    background-color: black;
+    color:white;
+    font-style: italic;
+    text-align: center;
+    padding: 3px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    /* 양쪽정렬 */
+    align-items: center;
+    /* 수직 가운데정렬 */
+    padding: 10px;
+    border-bottom: 1px solid gray;
+}
+.nav h1{
+    font-size: 1.5em; margin-left: 2vw;
+}
+.nav i{ 
+    font-size: 1.5em;
+}
+.bottom{
+    border-bottom: 1px solid lightgray;
+    position: relative;
+    text-align: center;
+    height: 30px;
+}
+.bottom i{
+    position: absolute;
+    left: 5px;
+    top: 8px;
+}
+.bottom h2{
+    font-size: 1em;
+    padding: 5px;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box p{
+    width: 60%;
+    height: 20%;
+    background-color: orangered;
+    /* position: absolute;
+    left: 50%; top:50%;
+    transform: translate(-50%, -50%); */
+    line-height: calc(200px * 0.2);
+}
+.center{
+    margin: auto;
+}
+.tac{text-align: center;}
+.vhcenter{
+    position: absolute;
+    left: 50%; top:50%;
+    transform: translate(-50% -50%);
+    margin: 0;
+}

@@ -77,4 +77,5 @@ h1{
      배경을 글자에 마스크를 씌운다. */
     border: 20px solid red;
     border-image: linear-gradient(gold 0%, silver 50%, red 100%) 20 stretch;
+    -webkit-text-stroke: 5px black;
 }

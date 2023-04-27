@@ -1,0 +1,95 @@
+label{
+    width: 50px;
+    display: block;
+    margin: 20px;
+    display: block;
+    cursor: pointer;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* label span {
+    display: block;
+    height: 3px;
+    background-color: blue;
+    border-radius: 2px;
+    margin: 3px auto;
+    width: 90%;
+} */
+ul{
+    display: none;
+}
+/* 박스 제어하기 */
+input:checked+ul{
+    display: block;
+}
+ul>li>a::before{
+    content: '\1F60A';
+}
+/* 서브메뉴디자인 및 구현 */
+ul{
+    position: relative;
+    width: 250px;
+}
+ul>li {
+    background-color: green;
+    font-weight: bold;
+    padding: 5px;
+    text-indent: 10px;
+}
+ul>li:not(:last-child){
+    /* border-bottom: 0.1px dashed white; */
+    box-shadow: 1px 1px 1px 1px white;
+}
+ul>li>a{
+    color: white;
+    display: block;
+}
+div.sub {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    border: 1px solid lightgray;
+}
+ul>li:hover{
+    background-color: lime;
+}
+ul>li:hover>a{
+    text-shadow: 1px 1px black;
+}
+ul>li:hover>div.sub{
+    width: 850px;
+    display: flex;
+}
+/* 서브메뉴디자인 */
+div.sub section{
+    /* float:left; */
+    flex:1;
+    margin: 5px;
+    padding: 10px;
+    border-right: 1px solid gray;
+}
+div.sub section:last-of-type{
+    flex: 2.2;
+}
+section img{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+section>ol{
+    font-size: 0.9em;
+    font-weight: normal;
+    color: gray;
+}
+section>h3{
+    font-size: 1em;
+    font-weight: normal;
+    margin: 5px;
+    margin-left: 0;
+    margin-bottom: 10px;
+}
+section li{
+    margin: 5px;
+}

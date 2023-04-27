@@ -1,0 +1,60 @@
+/* 서브메뉴 ol을 absolute처리하면
+메인메뉴 li를 relative하거나,
+메인메뉴 li를 감싸는 ul을 relative 한다.
+ul과 li의 width는 같게 설계할예정
+서브메뉴의 위치는 left: 100%; 하면
+width만큼 offset이 생긴다. */
+
+ul a,dt{ display: block; color: white; padding: 10px;}
+ol,dl { display: none; position: absolute;}
+ul li{ background-color: orange;}
+ul dt{ background-color: pink;}
+ul{ width: 200px; margin: 30px;
+text-indent: 10px;
+}
+ul>li:hover>a{
+    background: orangered;
+    text-indent: 15px;
+    transition: 0.5s;
+}
+ol>li:hover>a{
+    background: teal;
+    text-indent: 15px;
+    transition: 0.5s;
+}
+dt:hover{
+    background: hotpink;
+    text-indent: 15px;
+    transition: 0.5s;
+}
+
+
+ul>li,ol>li{ position: relative;}
+ul>li:hover>ol{ display: block; width: 100%; left: 100%; top: 0;}
+ol>li:hover>dl{ display: block; width: 100%; left: 100%; top: 0;}
+ol>li{ background-color: skyblue;}
+/* ul>li:nth-child(1){border-bottom: 1px dotted white;}
+ul>li:nth-child(2){border-bottom: 1px dotted white;}
+ul>li:nth-child(3){border-bottom: 1px dotted white;}
+ul>li:nth-child(4){border-bottom: 1px dotted white;}
+마지막 리스트 li만 제외하고 선택해서 아래쪽 테두리를 넣자 */
+
+ul>li,ol>li,dl>dt:not(:last-child){ border-bottom: 1px solid white;}
+
+/* 삼각형 불릿기호 달기 */
+ul>li>a{ position: relative;}
+ul>li>a::after{
+    content: ''; display: block; position: absolute;
+    width: 0; height: 0; border: 5px solid transparent; right:10%; top: 50%;
+    border-left-color: gold;
+}
+ol>li::after{
+    content: ''; display: block; position: absolute;
+    width: 0; height: 0; border: 5px solid transparent; right:10%; top: 50%;
+    border-left-color: plum;
+}
+ul a:hover:after{
+    content: ''; display: block; position: absolute;
+    width: 0; height: 0; border: 5px solid transparent; right:10%; top: 50%;
+    border-left-color: white;
+}

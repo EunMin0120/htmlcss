@@ -1,0 +1,4 @@
+ul{display: block; color: white; width: 200px; margin: 30px;
+    text-indent: 10px; padding: 10px; background: green}
+ul>li{display: block;}
+a{color: white;}
