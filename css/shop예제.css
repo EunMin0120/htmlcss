@@ -1,0 +1,114 @@
+header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+/* max-width: 1200px; */
+}
+.top{
+    background-color: black;
+    color:white;
+    font-style: italic;
+    text-align: center;
+    padding: 3px;
+}
+a.mainlogo{
+    display: block;
+}
+a.mainlogo>img{
+    display: block;
+    width:120px;
+}
+.nav{
+    margin: auto 20px;
+    display: flex;
+    justify-content: space-between;
+    /* 양쪽정렬 */
+    align-items: center;
+    /* 수직 가운데정렬 */
+    padding: 10px;
+    flex: 1;
+}
+.nav i{ 
+    font-size: 2em;
+}
+.search{
+    /* max-width: 1200px; */
+    position: relative;
+    text-align: center;
+    width: 80%;
+    height: 30px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.search h2{
+    font-size: 1em;
+    padding: 5px;
+}
+.searchbar{
+    position: relative;
+    margin: auto 0;
+    width: 96%;
+    height: 39px;
+    background-color: rgb(244,244,247);
+    color: rgb(141, 141, 161);;
+    /* max-width: 1200px; */
+    text-indent: 35px;
+    font-size: 14px;
+    border: none;
+    border-top-left-radius: 20px; /* 좌상단 모서리를 둥글게 처리 */
+    border-top-right-radius: 20px; /* 우상단 모서리를 둥글게 처리 */
+    border-bottom-left-radius: 20px; /* 좌하단 모서리를 둥글게 처리 */
+    border-bottom-right-radius: 20px; /* 우하단 모서리를 둥글게 처리 */
+}
+i.xi-search{
+    display: block;
+    text-align: left;
+    position: absolute;
+    z-index: 1;
+    top: 13px;
+    left: 3%;
+    color:rgb(141, 141, 161);
+}
+.main{
+    position: relative;
+    margin: auto;
+    width: 98%; height: 270px;
+    margin-top: 5px;
+}
+.maintop{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+    margin-top: 20px;
+}
+.button{
+    background-color: white;
+    border-bottom: 1px solid gray; /* 아랫변을 일자로 처리 */
+    border-left: 1px solid gray; /* 왼쪽 테두리는 없앰 */
+    border-right: 1px solid gray; /*오른쪽 테두리는 없앰 */
+    border-top-left-radius: 20px; /* 좌상단 모서리를 둥글게 처리 */
+    border-top-right-radius: 20px; /* 우상단 모서리를 둥글게 처리 */
+    border-bottom-left-radius: 20px; /* 좌하단 모서리를 둥글게 처리 */
+    border-bottom-right-radius: 20px; /* 우하단 모서리를 둥글게 처리 */
+    border-top: 1px solid gray; /* 윗변을 일자로 처리 */
+    align-items: center;
+}
+.mainitem>a>img{
+    width: 100%
+}
+.maintop-right{
+    float: left;
+}
+.livetalk{
+    width: 100px; height: 2em; font-size: 14px;
+}
+.schedule{
+    width: 80px; height: 2em; font-size: 14px;
+}
+.main{
+    border-top: 1px solid lightgray;
+    margin-top: 40px;
+}
