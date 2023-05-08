@@ -11,10 +11,22 @@ li{
     list-style: none;
 }
 table{
-    border-collapse: collapse
+    border-collapse: collapse;
+    border-spacing: 0;
     /* 표 테두리 단일실선; */
 }
 a:link{ color:black; }
 a:hover{ text-decoration: none;}
 a:active{ color: gray;}
-/* a:visited{ color: green;} */
+/* a:visited{ color: black;} */
+input, img{
+    vertical-align: baseline;
+}
+
+img, fieldset{ border:0;}
+
+em, i, address{ font-style: normal;}
+
+textarea{ resize: none;}
+
+label{cursor: pointer;}

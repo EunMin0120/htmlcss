@@ -1,0 +1,80 @@
+.table1 td{
+    border: 1px solid;
+    padding: 10px;
+    text-align: center;
+}
+.table1{
+    border: 0px solid blue;
+    margin: 10px;
+}
+.table1 td{
+    border: 1px solid red;
+}
+.table1 tr{
+    border: 0px solid gold;
+}
+caption{ border: 0px solid red;}
+.table1{
+    border-collapse: separate;
+    border-spacing: 0;
+}
+.table1{
+    border: 0px solid red;
+}
+.table1 td{
+    empty-cells: hide;
+}
+html, body{ width: 100%;}
+.table1{
+    width: calc(100vw - 10px);
+    table-layout: fixed;
+    height: auto;
+    word-break: break-all;
+}
+.table1 td{
+    width: 50px;
+    vertical-align: baseline;
+}
+input{
+    height: 30px;
+    vertical-align: baseline;
+}
+ul{ display: table;}
+ul li{ display: table-cell; padding: 10px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* table>tr*3>td*2>{울산}
+성남사람은 성남 응원하나
+스크롤바 없애는 해결법 못찾는중*/

@@ -1,0 +1,121 @@
+header,
+footer {
+    border: 2px solid;
+    margin: auto;
+    height: 100px;
+    background: lightgray;
+}
+
+#content,
+.inner {
+    width: 1200px;
+    border: 2px solid;
+    margin: auto;
+}
+.inner {
+    height: 100%;
+}
+
+.row {
+    height: 200px;
+    border: 1px solid;
+    display: flex;
+}
+.row article {
+    border: 1px solid;
+    flex: 1;
+}
+
+nav>ul>li>a {
+    padding: 10px 20px;
+    border: 1px solid black;
+    display: block;
+    color: black;
+}
+
+nav>ul {
+    width: 600px;
+    display: flex;
+}
+
+nav>ul>li {
+    flex: 1;
+    text-align: center;
+}
+
+header .inner {
+    position: relative;
+}
+
+header nav {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.inner h1 {
+    border-right: 1px dashed;
+    line-height: 100px;
+    text-align: center;
+    width: 200px;
+}
+
+nav>ul {
+    position: relative;
+}
+
+.sub {
+    display: none;
+    position: absolute;
+    width: 100%;
+    border: 1px solid;
+    box-sizing: border-box;
+    left:0;
+    background: white;
+}
+nav>ul>li:hover{background-color: gray;}
+nav>ul>li:hover>.sub {
+    display: flex;
+    z-index: 100;
+}
+ol>li:hover{background-color: gray;}
+.sub>ol {
+    flex: 1;
+}
+.swiper{
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+.panel{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3600px;
+}
+.panel>img{
+    width: 1200px;
+    height: 500px;
+    display: block;
+    float: left;
+}
+@keyframes swiper{
+    from{
+        left: 0;
+    }
+    50%{
+        left: -1200px;
+    }
+    to{
+        left: -2400px;
+    }
+}
+.panel{
+    animation: swiper 10s infinite alternate;
+}
+.swiper{
+    overflow: hidden;
+}
+.swiper:hover>.panel{
+    animation-play-state: paused;
+}

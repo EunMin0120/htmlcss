@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/switch.css">
+</head>
+<body>
+    <h1>모달창연습</h1>
+    <a href="#modal2" class="btn2">모달창연습 보이기</a>
+    <hr>
+    <div id="modal2">
+        <div class="modal-body2">
+            <img src="imgs/오연서/1.jpeg">
+            <hr>
+            <a href="#">닫기</a>
+        </div>
+    </div>
+
+
+    <h1>모달창 만들기</h1>
+    <a href="#modal" class="btn">모달창보이기</a>
+    <hr>
+    <div id="modal">
+        <div class="modal-body">
+            <img src="/imgs/오연서/6.png">
+            <hr>
+            <a href="#">닫기</a>
+        </div>
+    </div>
+    <p>버튼이나 사진을 클릭했을 때 팝업되는 화면을 modal popup이라고 하며, 라이트박스 라고도 함. 팝업창이 띄워져있는 동안 다른 컨텐츠는 선택이 안되고, 팝업창이 중앙에 위치하면, 일반적으로 배경색은 반투명 고정됨.</p>
+
+    <h1> 스위치 버튼 만들기</h1>
+    <div class="switch">
+        <input type="checkbox" id="sw1" class="input-on-off">
+        <label for="sw1" class="label-on-off">
+            <span class="marble"></span>
+            <span class="on">on</span>
+            <span class="off">off</span>
+        </label>
+    </div>
+    <div class="switch2">
+        <input name="switch2" id="one" type="radio" checked>
+        <label for="one" class="switch2_label">one</label>
+        <input name="switch2" id="two" type="radio">
+        <label for="two" class="switch2_label">two</label>
+        <input name="switch2" id="three" type="radio">
+        <label for="three" class="switch2_label">three  </label>
+        <div class="switch2_indicator"></div>
+    </div>
+
+    <h2> 이미지 좌우 및 상하 반전 </h2>
+    <img src="/imgs/model.jpg">
+    <style>
+        /* 이미지 좌우반전 */
+        img:hover{
+            transform: rotate(0deg);
+            transform: scaleX(-1);
+            filter:flip;
+        }
+        /* 이미지 상하반전 */
+        img:active{
+            transform: rotate(0deg);
+            transform: scaleY(-1);
+            filter:flip
+        }
+    </style>
+
+    <div class="progress">
+        <input type="radio" name="num1" id="first" checked>
+        <label for="first" class="progress_label">5%</label>
+        <input type="radio" name="num1" id="second">
+        <label for="second" class="progress_label">25%</label>
+        <input type="radio" name="num1" id="third">
+        <label for="third" class="progress_label">50%</label>
+        <input type="radio" name="num1" id="fourth">
+        <label for="fourth" class="progress_label">75%</label>
+        <input type="radio" name="num1" id="fifth">
+        <label for="fifth" class="progress_label">100%</label>
+        <div class="progress_bar"></div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>풍선도움말</title>
+        <link rel="stylesheet" href="css/reset.css">
+      
+    </head>
+    <body>
+        <div class="tipbox">
+            <a href="#">Tooltip</a>
+            <span class="box">
+                Pure CSS!
+            </span>
+        </div>
+        <style>
+            .tipbox{
+                width: 120px;
+                padding: 13px 18px;
+                display: block;
+                box-shadow: 3px 1px 9px 1px rgb(57, 57, 57);
+                border-radius: 5px;
+                position: absolute;
+                left: 200px;
+                top: 200px;
+                text-align: center;
+                font-weight: bold;
+            }
+            .box{
+                width: 200px;
+                height: 70px;
+                padding-left: 40px;
+                padding-top: 20px;
+                background-color: black;
+                color: white;
+                font-size: 26px;
+                position:absolute;
+                top: -400px;
+                left:-40px;
+                text-align: left;
+                vertical-align: top;
+                border-radius: 15px;
+                font-weight: normal;
+                transition: 1s;
+            }
+            .box::before{
+                content: '';
+                display: block;
+                width: 0;
+                height: 0;
+                border: 14px solid transparent;
+                border-top: 21px solid black;
+                position:absolute;
+                left: 110px;
+                bottom: -34px;
+            }
+            .tipbox:hover>.box{
+                top: -120px;
+                left:-40px;
+            }
+        </style>
+    </body>
+</html>

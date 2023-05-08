@@ -1,0 +1,5 @@
+.swiper{border: 1px solid;}
+.swiper-wrapper{
+    position:absolute;
+    left: 50px;
+}
