@@ -142,7 +142,7 @@ background-color: greenyellow;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50% -50%);
+    transform: translate(-50%, -50%);
     /* 박스 중앙에 배치하기 */
 }
 .btn{
@@ -174,7 +174,7 @@ background-color: greenyellow;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50% -50%);
+    transform: translate(-50%, -50%);
 }
 .btn2{
     display: block;
