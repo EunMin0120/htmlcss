@@ -1,0 +1,99 @@
+/* 헤더 시작 */
+header{
+    width: 800px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.logo{
+    width: 220px;
+    height: 90px;
+    margin: 5px 30px;
+    float: left;
+    display: block;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+}
+nav{
+    width: 450px;
+    height: 30px;
+    display: flex;
+    float: left;
+    margin: 35px auto;
+    text-align: center;
+}
+nav ul{
+    flex: 1;    
+    justify-content: space-around;
+    position: relative;
+}
+nav ul>a{
+    line-height: 28px;
+}
+nav li{
+    height: 0;
+    transition: 0.3s;
+    visibility: hidden;
+    background-color: white;
+    overflow: hidden;
+    opacity: 0;
+}
+nav a{
+    font-size: 14px;   
+    color: black;
+    line-height: 28px;
+}
+.sub>a{
+    color: black;
+}
+nav ul:hover{
+    background-color: rgb(51, 102, 255);
+}
+nav ul:hover>li{
+    visibility: visible;
+    height: 28px;
+    opacity: 1;
+}
+nav li:hover{
+    background-color: gray;
+}
+nav li:hover>a{
+    color: white;
+}
+/* 헤더 끝 */
+
+/* 섹션 시작 */
+.canvas{
+    width: 700px;
+    height: 500px;
+    margin: 10px auto;
+    overflow: hidden;
+    position: relative;
+}
+.panel{
+    width: 2100px;
+    margin: auto;
+    animation: slider 10s infinite alternate;
+}
+.panel img{
+    width: 700px;
+    height: 500px;
+    float: left;
+    display: flex;
+    object-fit: cover;
+}
+
+@keyframes slider{
+    from{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-700px);
+    }
+    to{
+        transform: translateX(-1400px);
+    }
+    }
