@@ -7,6 +7,9 @@
     <title>무빙사진동호회</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/무빙사진.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </head>
 <body>
     <header>
@@ -36,13 +39,32 @@
             </ul>
         </nav>
     </header>
-    <div class="canvas">
+    <div class="img_slide">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="/imgs/무빙사진동호회/슬라이드1.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/imgs/무빙사진동호회/슬라이드2.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/imgs/무빙사진동호회/슬라이드3.png">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </div>
+    <!-- <div class="canvas">
         <div class="panel">
             <img src="/imgs/무빙사진동호회/슬라이드1.png">
             <img src="/imgs/무빙사진동호회/슬라이드2.png">
             <img src="/imgs/무빙사진동호회/슬라이드3.png">
         </div>
-    </div>
+    </div> -->
     <section>
         <div class="notice">
                 <h2>공지사항</h2>
@@ -102,5 +124,22 @@
             <p>사업장주소:서울특별시 금천구 가산동 가산디지털2로</p> <br>
         </div>
     </footer>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            direction: 'horizontal',
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
 </body>
 </html>
