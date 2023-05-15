@@ -1,0 +1,108 @@
+.multi{
+    column-count: 3;
+    padding: 10px;
+    column-gap: 20px;
+    /* column-rule-color: red;
+    column-rule-style:dotted;
+    column-rule-width: 5px; */
+    column-rule: 5px dotted red;
+    /* column-width: 120px; */
+    
+}
+.multi:hover p{
+    column-span: all;
+}
+.multi p{
+    border-top: 1px solid black; /* 수평 구분선 스타일 설정 */
+  }
+.charts{
+    display: flex;
+    justify-content: center;
+}
+svg{
+    width: 220px;
+    height: 220px;
+    transform: rotate(-90deg);
+}
+svg circle{
+    fill: gray;
+    stroke: orange;
+    stroke-width: 20;
+    stroke-dasharray: 630;
+    stroke-dashoffset: 50;
+    stroke-linecap: round;
+    
+}
+
+@keyframes line1{
+    from{
+        stroke-dashoffset: 630;
+    }
+    to{
+        stroke-dashoffset: 200;
+    }
+}
+.chart circle{
+    /* animation: line1 3s alternate infinite; */
+    animation: line1 3s forwards;
+}
+@keyframes line2{
+    from{
+        stroke-dashoffset: 630;
+    }
+    to{
+        stroke-dashoffset: 100;
+    }
+}
+.chart:nth-child(2) circle{
+    /* animation: line1 3s alternate infinite; */
+    animation: line2 1s forwards;
+    stroke: blue;
+}
+
+
+/* 롤오버 구현 */
+/* ul>li*5>a[href]>span*2 */
+
+ul{
+    display: flex;
+    width: 500px;
+    margin: 30px;
+}
+ul>li{
+    display: flex;
+    border: 1px solid;
+    text-align: center;
+    text-transform: uppercase;
+}
+ul>li>a{
+    padding: 10px;
+    display: block;
+}
+ul>li>a>span:nth-child(2){
+    display: none;
+}
+/* 기본상태에서 영문글자가 나오고 마우스 올리면 한글이 나오게하기 */
+
+ul>li>a:hover>span:nth-child(1){
+    display: none;
+}
+ul>li>a:hover>span:nth-child(2){
+    display: block;
+}
+
+/* 롤오버 이미지 */
+ul>li>a>img{
+    display: block;
+    width: 200px;
+    height: 200px;
+}
+ul>li>a>img:nth-child(2){
+    display: none;
+}
+ul>li>a:hover>img:nth-child(1){
+    display: none;
+}
+ul>li>a:hover>img:nth-child(2){
+    display: block;
+}
